@@ -1,7 +1,12 @@
 import React from "react";
+import Attributes from "@components/Attributes/Attributes";
 
 const Home = () => {
-	return <div>Home</div>;
+	return (
+		<div>
+			<Attributes />
+		</div>
+	);
 };
 
 export default Home;
