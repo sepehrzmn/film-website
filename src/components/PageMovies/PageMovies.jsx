@@ -21,7 +21,7 @@ const PageMovies = () => {
 	if (isFetching) {
 		content = (
 			<section
-				className="container  mx-auto flex flex-col items-center  sm:grid sm:gap-x-4 sm:gap-y-4 sm:p-5 overflow-hidden"
+				className="container  mx-auto flex flex-col items-center sm:grid sm:gap-x-4 sm:gap-y-4 sm:p-5 overflow-hidden"
 				style={{
 					gridTemplateColumns: "repeat(auto-fit, minmax(400px, 1fr))",
 				}}
@@ -40,7 +40,7 @@ const PageMovies = () => {
 		content = (
 			<>
 				<section
-					className="container  mx-auto flex flex-col items-center  sm:grid sm:gap-x-4 sm:gap-y-4 sm:p-5 overflow-hidden"
+					className="container mx-auto flex flex-col items-center sm:grid sm:gap-x-4 sm:gap-y-4 sm:p-5 overflow-hidden"
 					style={{
 						gridTemplateColumns: "repeat(auto-fit, minmax(400px, 1fr))",
 					}}
