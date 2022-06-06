@@ -40,6 +40,7 @@ const Attributes = () => {
 					}}
 					transition={{
 						duration: 1.5,
+						delay: 1.3,
 					}}
 					className="col-span-4 bg-[#f6f4fa] xl:col-span-1 flex xl:flex-col ms:flex items-center justify-between xl:justify-center xl:gap-[4rem]  mt-6 xl:mt-0 border-y-8 xl:border-y-0 py-10 xl:py-0 xl:border-l-8  text-center text-slate-400 border-white font-bold px-2 scale-[70%] md:scale-90   "
 				>
@@ -49,6 +50,7 @@ const Attributes = () => {
 								end={150}
 								duration={1.8}
 								className="before:content-['+']"
+								delay={1.3}
 							/>
 						</span>
 						Movies
@@ -64,6 +66,7 @@ const Attributes = () => {
 								end={150}
 								duration={1.8}
 								className="before:content-['+']"
+								delay={1.3}
 							/>
 						</span>
 						Genres

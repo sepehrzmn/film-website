@@ -1,23 +1,25 @@
 import React from "react";
 
-import { Routes, Route, Navigate } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 
-import Home from "@routes/Home/Home";
-import Navbar from "@components/Navbar/Navbar";
-import PageMovies from "@components/PageMovies/PageMovies";
+import { Home } from "@routes";
+import { Navbar, PageMovies, AnimatedRoutes } from "@components";
 
 function App() {
+	const location = useLocation();
+
 	return (
-		<div>
+		<>
 			<Navbar />
-			<Routes>
-				<Route path="/" element={<Home />}>
-					<Route path="/" element={<PageMovies />} />
-					<Route path="movies" element={<PageMovies />} />
-					<Route path="*" element={<Navigate to={"/"} replace />} />
-				</Route>
-			</Routes>
-		</div>
+			<AnimatedRoutes>
+				<Routes location={location} key={location.pathname}>
+					<Route path="/" element={<Home />}>
+						<Route path="/" element={<PageMovies />} />
+						<Route path="movies" element={<PageMovies />} />
+					</Route>
+				</Routes>
+			</AnimatedRoutes>
+		</>
 	);
 }
 
