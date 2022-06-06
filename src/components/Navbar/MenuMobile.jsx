@@ -39,7 +39,7 @@ function MenuMobile() {
 				animate={{
 					transform: hidden ? "translate(0%)" : "translate(-100%)",
 				}}
-				className="py-2 uppercase font-normal ml-auto  fixed w-[100%] left-0 flex justify-center bg-forgottenPurple text-[white] top-16 "
+				className="py-2 uppercase font-normal absolute ml-auto w-[100%] left-0 flex justify-center bg-forgottenPurple text-[white] top-16 "
 			>
 				<li className="list-item p-2 text-[16px] font-[600] w-44  ">
 					<Link to={"/genres"}>genres</Link>
