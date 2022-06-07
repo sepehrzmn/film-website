@@ -49,7 +49,7 @@ function InitialTransition() {
 	}, []);
 
 	return (
-		<div className="fixed flex inset-0 items-end" id="initial-page">
+		<div className="fixed flex inset-0 items-end z-50 " id="initial-page">
 			<motion.div
 				className="z-50 w-full flex justify-center items-center bg-indigo-600 text-white"
 				initial="initial"
