@@ -46,7 +46,7 @@ const PageMovies = () => {
 					}}
 				>
 					{movies.ids.map((moviesId) => (
-						<Link to={"/"} key={moviesId}>
+						<Link to={`/movie/${moviesId}`} key={moviesId}>
 							<Movie key={moviesId} id={moviesId} pageId={pageId} />
 						</Link>
 					))}
