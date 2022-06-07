@@ -30,7 +30,6 @@ export const selectPostData = createSelector(
 		},
 	],
 	(state, moviesResult, id) => {
-		console.log(id);
 		const result = moviesResult(state, id);
 		return result?.data;
 	}
