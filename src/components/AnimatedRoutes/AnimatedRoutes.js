@@ -3,7 +3,7 @@ import React from "react";
 import { AnimatePresence } from "framer-motion";
 
 function AnimatedRoutes({ children }) {
-	return <AnimatePresence>{children}</AnimatePresence>;
+	return <AnimatePresence exitBeforeEnter>{children}</AnimatePresence>;
 }
 
 export default AnimatedRoutes;
