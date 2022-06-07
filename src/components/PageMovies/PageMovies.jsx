@@ -5,6 +5,7 @@ import { useSearchParams } from "react-router-dom";
 
 import Movie from "./Movie";
 import { Link } from "react-router-dom";
+import Error from "../Error/Error";
 
 const PageMovies = () => {
 	const [params] = useSearchParams();
@@ -88,16 +89,11 @@ const PageMovies = () => {
 			</>
 		);
 	} else if (isError) {
+		const text = error?.data?.message ?? error?.error;
+		const status = error.status;
 		content = (
 			<>
-				<div className="mt-20">
-					<div className="bg-red-500 text-white font-bold rounded-t px-4 py-2">
-						Danger
-					</div>
-					<div className="border border-t-0 border-red-400 rounded-b bg-red-100 px-4 py-3 text-red-700">
-						<p>{error}</p>
-					</div>
-				</div>
+				<Error text={text} status={status} />
 			</>
 		);
 	}
