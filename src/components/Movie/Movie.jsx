@@ -3,11 +3,14 @@ import PropTypes from "prop-types";
 
 import { movieInPage } from "@features/pages/pagesSlice";
 import { useSelector } from "react-redux";
+import { movieGenre } from "@features/genres/PageGenreSlice";
 
 import { motion } from "framer-motion";
 
-const Movie = ({ id, pageId }) => {
-	const movie = useSelector((state) => movieInPage(state, id, pageId));
+const Movie = ({ id, infoPage, genre, pageId }) => {
+	const movie = useSelector((state) =>
+		genre ? movieGenre(state, id, infoPage) : movieInPage(state, id, pageId)
+	);
 	return (
 		<motion.section
 			whileInView={{
@@ -88,6 +91,7 @@ const Movie = ({ id, pageId }) => {
 Movie.propTypes = {
 	id: PropTypes.number,
 	pageId: PropTypes.number,
+	genre: PropTypes.bool,
 };
 
 export default Movie;

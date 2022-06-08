@@ -2,6 +2,7 @@ import React from "react";
 
 import { GenresMain, InitialTransition } from "@components";
 import { motion } from "framer-motion";
+import { Outlet } from "react-router-dom";
 
 function Genres() {
 	const animePage = {
@@ -24,6 +25,7 @@ function Genres() {
 			<InitialTransition />
 			<motion.div initial="initial" animate="animate" variants={animePage}>
 				<GenresMain />
+				<Outlet />
 			</motion.div>
 		</motion.main>
 	);

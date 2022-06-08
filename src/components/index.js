@@ -7,3 +7,4 @@ export { default as IntoSingePageMovie } from "./IntoSingePageMovie/IntoSingePag
 export { default as Error } from "./Error/Error";
 export { default as GenresMain } from "./GenresMain/GenresMain";
 export { default as Movie } from "./Movie/Movie";
+export { default as MovieGenres } from "./MovieGenres/MovieGenres";

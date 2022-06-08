@@ -3,7 +3,7 @@ import React from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 
 import { Home, SingleMoviePage, Genres } from "@routes";
-import { Navbar, PageMovies, AnimatedRoutes } from "@components";
+import { Navbar, PageMovies, AnimatedRoutes, MovieGenres } from "@components";
 
 function App() {
 	const location = useLocation();
@@ -18,7 +18,10 @@ function App() {
 						<Route path="movies" element={<PageMovies />} />
 					</Route>
 					<Route path="/movie/:movieId" element={<SingleMoviePage />} />
-					<Route path="/genres" element={<Genres />} />
+					<Route path="/genres" element={<Genres />}>
+						<Route path=":genres" element={<MovieGenres />} />
+						<Route path=":genreId/movies" element={<MovieGenres />} />
+					</Route>
 				</Routes>
 			</AnimatedRoutes>
 		</>
