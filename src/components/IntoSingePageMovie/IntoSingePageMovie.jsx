@@ -16,7 +16,7 @@ function IntoSingePageMovie({ movieId }) {
 	} = useGetSingleMovieQuery(movieId);
 
 	let content;
-
+	console.log(movieInfo);
 	if (isFetching) {
 		content = <Loading />;
 	} else if (isSuccess) {
@@ -106,14 +106,15 @@ function IntoSingePageMovie({ movieId }) {
 						</section>
 						<section className="col-span-8 xl:col-span-2"></section>
 						<section className="col-span-8 xl:row-span-1 flex justify-center items-center gap-2 flex-wrap mt-5  xl:mt-0">
-							{movieInfo.images.map((image, index) => (
-								<img
-									key={index + 1}
-									src={image}
-									className="w-[300px]"
-									alt={movieInfo.title}
-								/>
-							))}
+							{movieInfo.images &&
+								movieInfo.images.map((image, index) => (
+									<img
+										key={index + 1}
+										src={image}
+										className="w-[300px]"
+										alt={movieInfo.title}
+									/>
+								))}
 						</section>
 					</section>
 				</section>
