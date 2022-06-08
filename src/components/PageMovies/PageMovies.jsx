@@ -3,9 +3,8 @@ import React from "react";
 import { useGetPageMoviesQuery } from "@features/pages/pagesSlice";
 import { useSearchParams } from "react-router-dom";
 
-import Movie from "./Movie";
+import { Movie, Error } from "@components";
 import { Link } from "react-router-dom";
-import Error from "../Error/Error";
 
 const PageMovies = () => {
 	const [params] = useSearchParams();

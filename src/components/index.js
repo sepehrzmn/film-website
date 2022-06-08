@@ -6,3 +6,4 @@ export { default as InitialTransition } from "./InitialTransition/InitialTransit
 export { default as IntoSingePageMovie } from "./IntoSingePageMovie/IntoSingePageMovie";
 export { default as Error } from "./Error/Error";
 export { default as GenresMain } from "./GenresMain/GenresMain";
+export { default as Movie } from "./Movie/Movie";
