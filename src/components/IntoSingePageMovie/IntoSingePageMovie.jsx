@@ -4,7 +4,6 @@ import PropTypes from "prop-types";
 import { useGetSingleMovieQuery } from "@features/api/apiSlice";
 
 import { Error } from "@components";
-import { Link } from "react-router-dom";
 import Loading from "./Loading";
 
 function IntoSingePageMovie({ movieId }) {
@@ -115,14 +114,6 @@ function IntoSingePageMovie({ movieId }) {
 									alt={movieInfo.title}
 								/>
 							))}
-						</section>
-						<section className="col-span-8 xl:row-span-1 flex justify-center items-center mt-8">
-							<Link
-								to={`/edit/${movieId}`}
-								className="px-10 py-2 bg-red-600 rounded-lg hover:bg-red-500 "
-							>
-								Edit Info
-							</Link>
 						</section>
 					</section>
 				</section>
