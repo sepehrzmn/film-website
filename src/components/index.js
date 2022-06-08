@@ -5,3 +5,4 @@ export { default as AnimatedRoutes } from "./AnimatedRoutes/AnimatedRoutes";
 export { default as InitialTransition } from "./InitialTransition/InitialTransition";
 export { default as IntoSingePageMovie } from "./IntoSingePageMovie/IntoSingePageMovie";
 export { default as Error } from "./Error/Error";
+export { default as GenresMain } from "./GenresMain/GenresMain";

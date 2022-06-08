@@ -2,7 +2,7 @@ import React from "react";
 
 import { Routes, Route, useLocation } from "react-router-dom";
 
-import { Home, SingleMoviePage } from "@routes";
+import { Home, SingleMoviePage, Genres } from "@routes";
 import { Navbar, PageMovies, AnimatedRoutes } from "@components";
 
 function App() {
@@ -18,6 +18,7 @@ function App() {
 						<Route path="movies" element={<PageMovies />} />
 					</Route>
 					<Route path="/movie/:movieId" element={<SingleMoviePage />} />
+					<Route path="/genres" element={<Genres />} />
 				</Routes>
 			</AnimatedRoutes>
 		</>
