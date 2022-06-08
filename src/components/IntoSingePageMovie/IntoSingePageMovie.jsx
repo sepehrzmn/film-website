@@ -16,7 +16,6 @@ function IntoSingePageMovie({ movieId }) {
 	} = useGetSingleMovieQuery(movieId);
 
 	let content;
-	console.log(movieInfo);
 	if (isFetching) {
 		content = <Loading />;
 	} else if (isSuccess) {

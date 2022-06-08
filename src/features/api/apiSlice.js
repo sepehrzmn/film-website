@@ -7,7 +7,10 @@ export const apiSlice = createApi({
 		getSingleMovie: builder.query({
 			query: (movieId) => ({ url: `movies/${movieId}`, method: "GET" }),
 		}),
+		addUser: builder.mutation({
+			query: (user) => ({ url: "/register", method: "POST", body: user }),
+		}),
 	}),
 });
 
-export const { useGetSingleMovieQuery } = apiSlice;
+export const { useGetSingleMovieQuery, useAddUserMutation } = apiSlice;

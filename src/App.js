@@ -2,7 +2,7 @@ import React from "react";
 
 import { Routes, Route, useLocation } from "react-router-dom";
 
-import { Home, SingleMoviePage, Genres } from "@routes";
+import { Home, SingleMoviePage, Genres, Login } from "@routes";
 import { Navbar, PageMovies, AnimatedRoutes, MovieGenres } from "@components";
 
 function App() {
@@ -22,6 +22,7 @@ function App() {
 						<Route path=":genres" element={<MovieGenres />} />
 						<Route path=":genreId/movies" element={<MovieGenres />} />
 					</Route>
+					<Route path="/login" element={<Login />} />
 				</Routes>
 			</AnimatedRoutes>
 		</>

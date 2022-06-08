@@ -100,7 +100,9 @@ const MovieGenres = () => {
 		const status = error.status;
 		content = (
 			<>
-				<Error text={text} status={status} />
+				<section className="col-auto">
+					<Error text={text} status={status} />
+				</section>
 			</>
 		);
 	}
