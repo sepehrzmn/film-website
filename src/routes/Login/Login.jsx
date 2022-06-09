@@ -137,7 +137,6 @@ function Login() {
 										const reqExp =
 											/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 										const match = text.match(reqExp);
-										console.log(match);
 										if (!match) {
 											setError((preventError) => ({
 												...preventError,
