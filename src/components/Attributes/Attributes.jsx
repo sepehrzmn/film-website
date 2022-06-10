@@ -12,10 +12,7 @@ const Attributes = () => {
 	return (
 		<section className="bg-[#e9e3f8] bg-opacity-[40%] py-2 uppercase select-none ">
 			<div className="container grid grid-cols-4 mx-auto">
-				<section
-					className="col-span-4 xl:col-span-3 overflow-hidden text-center xl:text-left tracking-[1rem] sm:tracking-[2.5rem] text-transparent bg-clip-text"
-					style={{ backgroundImage: `url("${moviesPoster}")` }}
-				>
+				<section className="col-span-4 xl:col-span-3 overflow-hidden text-center xl:text-left tracking-[1rem] sm:tracking-[2.5rem] text-transparent">
 					<motion.h4
 						initial={{
 							transform: "translate(50%)",
@@ -26,7 +23,8 @@ const Attributes = () => {
 						transition={{
 							duration: 2,
 						}}
-						className="text-6xl overflow-hidden leading-loose font-[600] sm:text-9xl md:text-9xl md:leading-relaxed "
+						className="text-6xl overflow-hidden leading-loose font-[600] sm:text-9xl md:text-9xl md:leading-relaxed bg-clip-text"
+						style={{ backgroundImage: `url("${moviesPoster}")` }}
 					>
 						movie change the world
 					</motion.h4>
